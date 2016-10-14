@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>#LadyPassword Test Drive</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="ladypwd.js"></script>
+    <style>
+    #loginDiv{
+      position: absolute;
+      top: 30%;
+      left: 30%;
+      margin-top: -50px;
+      margin-left: -50px;
+      width: 300px;
+      height: 300px;
+    }
+    #imgSecure{
+        position: absolute;
+        top: 145;
+        width: 45;
+        height: 45;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    </style>
+  </head>
+  <body>
+    <h1>#LadyPassword - <small>Form Protection</small></h1>
+
+    <div id="loginDiv">
+      <br/><br/>
+      <form action="#">
+        <div class="form-group">
+          <label for="InputEmail1">Email address</label>
+          <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="Password1">Password</label>
+          <input type="password" class="form-control" id="Password1" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    <div>
+
+    <script type="text/javascript">
+      ladypassword_apply_protection("Password1");
+    </script>
+  </body>
+</html>
